@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManager"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300">
+        Title="Simple Library Management System" Height="300" Width="300" WindowStyle="None" AllowsTransparency="True" Opacity=".8" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="login_mouseleftdwn" BorderBrush="#FF857E7E" Loaded="loginwindow_loadd" Icon="Images/library.ico">
     <Grid>
-        
+        <Button HorizontalAlignment="Left" BorderBrush="White" Margin="275,0,0,0" VerticalAlignment="Top" Height="25" Width="25" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/images/close.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="User Name :" HorizontalAlignment="Left" Margin="23,52,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtUserName" HorizontalAlignment="Left" Height="23" Margin="23,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="252"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="23,109,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="pswdField" HorizontalAlignment="Left" Margin="23,140,0,0" VerticalAlignment="Top" Height="23" Width="252"/>
+        <!--<Label Content="I am student &gt;" Foreground="Blue" HorizontalAlignment="Left" Margin="202,264,0,0" VerticalAlignment="Top" MouseLeftButtonDown="lblstndt_mld"/>-->
+        <Button Content="Login" HorizontalAlignment="Left" Margin="105,191,0,0" VerticalAlignment="Top" Width="75" Background="#FFFBFBFB" Click="Button_Click_1"/>
+        <Label Name="lblNotif" Content="" FontSize="11" Foreground="Red" HorizontalAlignment="Left" Margin="23,224,0,0" VerticalAlignment="Top" Width="267" Height="35"/>
+        <Border BorderBrush="Black" BorderThickness="1.5" CornerRadius="5" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="300"/>
     </Grid>
 </Window>
