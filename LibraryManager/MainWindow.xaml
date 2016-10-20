@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Library managment system" Height="700" Width="1300" WindowStartupLocation="CenterScreen" WindowState="Maximized" BorderBrush="Blue" WindowStyle="None" AllowsTransparency="True" Opacity=".99" Icon="/images/library.ico" Loaded="AdminHome_loaded">
     <Grid>
-        
+        <Button x:Name="btnClose" Content="" BorderThickness="0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Right" Width="30" Click="btnClose_Click" Margin="0,10,10,0">
+            <Button.Background>
+                <ImageBrush ImageSource="images/close.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Simple Library Management System" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Name="lblLogout" Content="Logout" Foreground="Blue" FontSize="14" HorizontalAlignment="Right" Margin="0,11,77,0" VerticalAlignment="Top" Width="86" MouseLeftButtonDown="lblLogout_mld" MouseEnter="lblLogout_me" MouseLeave="lblLogout_mlv"/>
+
+        <Image Name="picMembers" HorizontalAlignment="Left" Height="197" Margin="70,121,0,0" VerticalAlignment="Top" Width="233" Source="/images/user-folder.png" MouseLeftButtonDown="picMembers_MouseLeftButtonDown" MouseEnter="picMembers_MouseEnter" MouseLeave="picMembers_MouseLeave"/>
+        <Label Content="Library Members" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="70,318,0,0" FontSize="18" VerticalAlignment="Top" Width="233" FontWeight="Bold"/>
+
+
+
     </Grid>
 </Window>
